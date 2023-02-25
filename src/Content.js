@@ -14,10 +14,14 @@ import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
-import project1 from "./assets/images/Projects/img1.png";
-import project2 from "./assets/images/Projects/img2.png";
-import project3 from "./assets/images/Projects/img3.png";
 import person_project from "./assets/images/Projects/person.png";
+import dashyDashImg from './assets/images/Projects/dashyDashImage.webp'
+import communityImg from './assets/images/Projects/communityImage.jpg'
+import tensorplaceImg from './assets/images/Projects/tensorplaceImage.jpg'
+import greenpillImg from './assets/images/Projects/greenpillImage.jpg'
+import productionManageentImg from './assets/images/Projects/productionManageent.png'
+import hemsuriImg from './assets/images/Projects/hemsuriImage.jpg'
+
 
 import avatar1 from "./assets/images/Testimonials/avatar1.png";
 import avatar2 from "./assets/images/Testimonials/avatar2.png";
@@ -148,20 +152,16 @@ export const content = {
     title: "Projects",
     subtitle: "MY CREATION",
     image: person_project,
-    project_content: [
-      {
-        title: "Gym Website",
-        image: project1,
-      },
-      {
-        title: "Social Media web",
-        image: project2,
-      },
-      {
-        title: "Creative Website",
-        image: project3,
-      },
-    ],
+    project_content:
+      [
+        { title: 'DashyDash', description: 'A Platform for processing Restaurant invoices and providing analyzed valuable data with the attractive graphs. Users will upload invoices and will get processed data and additionally analyzed data weekly, monthly, and yearly, which helps grow their business.', techStack: ['ReactJs', 'Django', 'Lambda', 'S3Bucket', 'API Gateway', 'PostgreSQL'], site: 'https://www.dashydash.com/', projectImg: dashyDashImg },
+        { title: 'JainSangh', description: 'A Platform for Connecting All Jain Sangh on one platform Digitally. Users can join any of Sangh(community) and get connected with them and get participate in multiple events and activities mange by Sangh.', techStack: ['ReactJs', 'Nodejs', 'S3Bucket', 'API Gateway', 'PostgreSQL'], site: 'https://www.jainsangh.info/', projectImg: communityImg },
+        { title: 'Tensorplace.io', description: 'A transparent blockchain-enabled marketplace platform for Machine Learning and Data Science capabilities.  Users can sell and buy repositories as per their needs. The seller can sell his private repositories of platforms like GitHub, Bitbucket, and GitLab and generate revenue using the Tensorplace platform.', techStack: ['ReactJs', 'Nodejs', 'FireStore'], site: 'https://www.tensorplace.in/', projectImg: tensorplaceImg },
+        { title: 'GreenPill Admin Panel', description: 'An Admin PlatForm for one of the Solar Equipment Delar, From where he can manage his products to sell, his user’s inquiry, offer Module, new update notification, Payment Module, Each open service status.', techStack: ['JavaScript', 'NodeJs', 'FireStore'], site: 'A Admin PlatForm for one of the Solar Equipment Delar, From where he can manage his products to sell, his user’s inquiry, offer Module, new update notification, Payment Module, Each open service status', projectImg: greenpillImg },
+        { title: 'Production Management', description: 'A Platform for production factory to manage their work, where they can manage their orders and give live update of stage where orders exists', techStack: ['ReactJs'], site: 'https://main.d2em53wksydifu.amplifyapp.com/', projectImg: productionManageentImg },
+        { title: 'Hemsuri Maharaj', description: 'It is a project of booking continuous upvas(fast) for 1year, on occasion of hemsuri maharaj pratishtha', techStack: ['React', 'FireStore'], site: 'https://www.hemsuri.in/', projectImg: hemsuriImg },
+        // { title: '', description: '', techStack: [], site: '',github:"" },
+      ],
   },
   Testimonials: {
     title: "Testimonials",
@@ -215,11 +215,6 @@ export const content = {
         icon: MdCall,
         link: "https://wa.me/918141301286",
       },
-      // {
-      //   text: "codeaprogram",
-      //   icon: BsInstagram,
-      //   link: "https://www.instagram.com/codeaprogram/",
-      // },
     ],
   },
   Footer: {

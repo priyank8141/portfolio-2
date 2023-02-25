@@ -12,7 +12,7 @@ const Projects = () => {
   const { Projects } = content;
   return (
     <section className="bg-bg_light_primary" id="projects">
-      <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
+      <div className="md:container px-5 pt-14 min-h-screen flex flex-col">
         <div>
           <h2 className="title" data-aos="fade-down">
             {Projects.title}
@@ -22,7 +22,32 @@ const Projects = () => {
           </h4>
           <br />
         </div>
-        <div className="flex items-center lg:flex-row flex-col-reverse gap-5">
+
+        <div class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {Projects.project_content.map((content, i) => (
+            <div class="my-8 rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300 hover:-translate-y-1">
+              <a _href={content.site} class="cursor-pointer">
+                <figure>
+                  <img
+                    src={content.projectImg}
+                    class="rounded-t h-72 w-full object-cover"
+                  />
+
+                  <figcaption class="p-4">
+                    <p class="text-lg mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300">
+                      {content.title}
+                    </p>
+                    <small class="leading-5 text-gray-500 dark:text-gray-400">
+                      {content.description}
+                    </small>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+          ))}
+        </div>
+
+        {/* <div className="flex items-center lg:flex-row flex-col-reverse gap-5">
           <img
             src={Projects.image}
             alt="..."
@@ -53,7 +78,7 @@ const Projects = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </div> */}
       </div>
     </section>
   );
