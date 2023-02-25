@@ -2,9 +2,11 @@
 import Hero_person from "./assets/images/Hero/person.png";
 
 import figma from "./assets/images/Skills/figma.png";
-import sketch from "./assets/images/Skills/sketch.png";
-import ps from "./assets/images/Skills/ps.png";
+import django from "./assets/images/Skills/django.png";
 import reactjs from "./assets/images/Skills/react.png";
+import redux from "./assets/images/Skills/redux.png";
+import typescript from "./assets/images/Skills/typescript.png";
+import javascript from "./assets/images/Skills/javascript.png";
 import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
 
@@ -12,10 +14,10 @@ import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
-import project1 from "./assets/images/projects/img1.png";
-import project2 from "./assets/images/projects/img2.png";
-import project3 from "./assets/images/projects/img3.png";
-import person_project from "./assets/images/projects/person.png";
+import project1 from "./assets/images/Projects/img1.png";
+import project2 from "./assets/images/Projects/img2.png";
+import project3 from "./assets/images/Projects/img3.png";
+import person_project from "./assets/images/Projects/person.png";
 
 import avatar1 from "./assets/images/Testimonials/avatar1.png";
 import avatar2 from "./assets/images/Testimonials/avatar2.png";
@@ -59,13 +61,13 @@ export const content = {
   ],
   hero: {
     title: "Web Developer",
-    firstName: "JOHN",
-    LastName: "ALEX",
+    firstName: "PRIYANK",
+    LastName: "JAIN",
     btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
       {
-        count: "8+",
+        count: "3+",
         text: "Years of Experinse in Web development",
       },
       {
@@ -76,8 +78,18 @@ export const content = {
   },
   skills: {
     title: "Skills",
-    subtitle: "MY TOP SKILLS",
+    subtitle: "For Those Who Know What They’re Looking For...",
     skills_content: [
+      {
+        name: "React js",
+        para: "Lorem ipsum text  dummy",
+        logo: reactjs,
+      },
+      {
+        name: "Redux",
+        para: "Lorem ipsum text  dummy",
+        logo: redux,
+      },
       {
         name: "Figma",
         para: "Lorem ipsum text  dummy",
@@ -89,19 +101,19 @@ export const content = {
         logo: nodejs,
       },
       {
-        name: "Adobe Photoshop",
+        name: "Django",
         para: "Lorem ipsum text  dummy",
-        logo: ps,
+        logo: django,
       },
       {
-        name: "React js",
+        name: "Javascript",
         para: "Lorem ipsum text  dummy",
-        logo: reactjs,
+        logo: javascript,
       },
       {
-        name: "Sketch",
+        name: "Typescript",
         para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        logo: typescript,
       },
       {
         name: "Python",
@@ -117,17 +129,17 @@ export const content = {
     service_content: [
       {
         title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "Create end to end attractive and responsive website for your business",
         logo: services_logo1,
       },
       {
         title: "ui / ux DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "User experience design services that can turn all your ideas into reality.",
         logo: services_logo2,
       },
       {
-        title: "PhotoShop Editing",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        title: "Application Development",
+        para: "Create end to end user attractive mobile application",
         logo: services_logo3,
       },
     ],
@@ -159,7 +171,7 @@ export const content = {
         review:
           "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
         img: avatar1,
-        name: "JOHN DOE",
+        name: "PRIYANK DOE",
       },
       {
         review:
@@ -190,24 +202,24 @@ export const content = {
     btnText: "Hire Me",
   },
   Contact: {
-    title: "Contect Me",
+    title: "Contact Me",
     subtitle: "GET IN TOUCH",
     social_media: [
       {
-        text: "codeaprogram@gmail.com",
+        text: "jainpriyank789@gmail.com",
         icon: GrMail,
-        link: "mailto:codeaprogram@gmail.com",
+        link: "mailto:jainpriyank789@gmail.com",
       },
       {
-        text: "+91 1234 56778",
+        text: "+91 8780533084",
         icon: MdCall,
-        link: "https://wa.me/1234567890",
+        link: "https://wa.me/918141301286",
       },
-      {
-        text: "codeaprogram",
-        icon: BsInstagram,
-        link: "https://www.instagram.com/codeaprogram/",
-      },
+      // {
+      //   text: "codeaprogram",
+      //   icon: BsInstagram,
+      //   link: "https://www.instagram.com/codeaprogram/",
+      // },
     ],
   },
   Footer: {

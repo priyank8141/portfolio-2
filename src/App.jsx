@@ -27,11 +27,11 @@ const App = () => {
       <Skills />
       <Service />
       <Projects />
-      <Testimonials />
-      <Hireme />
+      {/* <Testimonials /> */}
+      {/* <Hireme /> */}
       <Contact />
       <footer className="p-3 text-center">
-        <h6 className="mb-3">JOHN ALEX</h6>
+        <h6 className="mb-3">Priyank Jain</h6>
         <p>codeaprogram © All CopyRights Reserved 2022</p>
       </footer>
     </div>
