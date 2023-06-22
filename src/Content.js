@@ -67,7 +67,8 @@ export const content = {
     },
   ],
   hero: {
-    title: "Full Stack Developer",
+    title: "Priyank",
+    title2: " A Full Stack Developer",
     firstName: "PRIYANK",
     LastName: "JAIN",
     btnText: "Hire Me",

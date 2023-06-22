@@ -20,7 +20,8 @@ const Hero = () => {
 
         {/* first col */}
         <div className="pb-16 px-6 pt-5" data-aos="fade-down">
-          <h2>{hero.title}</h2>
+          <h2 className="pb-5 text-[#6190e8]">{hero.title}</h2>
+          <h2>{hero.title2}</h2>
           <br />
           <div className="flex justify-end">
             <a href="#contact">
